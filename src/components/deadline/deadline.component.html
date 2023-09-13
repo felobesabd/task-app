@@ -1,0 +1,77 @@
+<div>
+  <mat-card class="example-card">
+    <div class="row">
+      <h3 class="fs-6">{{"deadline.TheResource" | translate}}</h3>
+
+      <div class="d-flex position-relative">
+        <input class="col-9" type="number" value="0" #inputNum (change)="saveVal(inputNum.value)" name="available">
+<!--        <span class="fas fa-chevron-down"></span>-->
+<!--        <input class="col-3" (click)="submit($event)" type="submit" value="Month" >-->
+        <select class="col-3 select" name="select"
+                aria-label="Default select example" #value (change)="selectValue(value.value)">
+          <option value="0">{{"deadline.choose" | translate}}</option>
+          <option value="1">{{"deadline.day" | translate}}</option>
+          <option value="2">{{"deadline.month" | translate}}</option>
+          <option value="3">{{"deadline.year" | translate}}</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="row">
+      <h3 class="fs-6 mt-3">{{"deadline.resourceTime" | translate}}</h3>
+
+      <div class="d-flex align-items-center position-relative column">
+
+        <div class="col-7">
+          <div class="form-check form-check-inline position-relative">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="1">
+            <i class="fas fa-box"></i>
+            <label class="form-check-label" for="inlineRadio1">{{"deadline.serviceTime" | translate}}</label>
+          </div>
+          <div class="form-check form-check-inline position-relative">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="2">
+            <i class="far fa-clock"></i>
+            <label class="form-check-label" for="inlineRadio2">{{"deadline.fixedTime" | translate}}</label>
+          </div>
+        </div>
+
+        <div class="width col-5">
+          <div class="time">
+            <button class="btn btn-primary" (click)="increment($event)">+</button>
+            <span><span name="count">{{count}}</span> {{"deadline.minutes" | translate}}</span>
+            <button class="btn btn-primary" (click)="decrement($event)">-</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <h3 class="fs-6 mt-3">{{"deadline.multipleReserving" | translate}}</h3>
+
+      <div class="d-flex align-items-center position-relative column">
+
+        <div class="col-7">
+          <div class="form-check form-check-inline position-relative">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions2" value="option1" id="inlineRadio3">
+            <i class="far fa-user"></i>
+            <label class="form-check-label" for="inlineRadio3">{{"deadline.onlyOne" | translate}}</label>
+          </div>
+          <div class="form-check form-check-inline position-relative">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions2" value="option2" id="inlineRadio4">
+            <i class="fas fa-users"></i>
+            <label class="form-check-label" for="inlineRadio4">{{"deadline.moreThanOne" | translate}}</label>
+          </div>
+        </div>
+
+        <div class="width col-5">
+          <div class="">
+            <input class="input-num w-100" type="number" value="0" name="reservation">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </mat-card>
+</div>

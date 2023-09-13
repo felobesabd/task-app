@@ -1,0 +1,59 @@
+.select {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  padding: 0px 20px;
+}
+
+.mdc-form-field {
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .select {
+    padding: 0 12px;
+  }
+  .header {
+    font-size: 13px;
+    margin-right: 0 !important;
+  }
+  .radio {
+    width: 45px !important;
+  }
+  .radio {
+    margin-right: 5px !important;
+  }
+  .mdc-radio {
+    width: 17px !important;
+    height: 19px !important;
+  }
+  .mdc-form-field>label {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 767px) {
+  .header {
+    font-size: 13px;
+    margin-right: 0 !important;
+  }
+  .radio {
+    margin: 0 !important;
+  }
+  .mdc-form-field>label {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 10px !important;
+  }
+  .mdc-radio {
+    width: 10px !important;
+  }
+  .select {
+    padding: 0 5px;
+  }
+}

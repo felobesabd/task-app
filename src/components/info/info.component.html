@@ -1,0 +1,24 @@
+<div>
+  <mat-card class="example-card">
+
+    <mat-card-header>
+
+      <div mat-card-avatar class="example-header-image col-sm-2 position-relative">
+        <span><img class="image" src="assets/avtar2.txt"></span>
+        <div>
+          <label for="selectImg"><img mat-card-sm-image src="{{image !== '' ? image : '../../assets/avatar.txt'}}"></label>
+          <input type="file" id="selectImg" name="selectImg" (change)="selectedImg($event)" hidden>
+        </div>
+
+      </div>
+
+      <div class="col-sm-10">
+        <span class="resName">{{'info.resourceName' | translate}}</span>
+        <input type="text" class="input" #inputVal name="name"
+               placeholder="Enter Your Name">
+      </div>
+
+    </mat-card-header>
+
+  </mat-card>
+</div>

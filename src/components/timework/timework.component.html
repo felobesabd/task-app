@@ -1,0 +1,61 @@
+<div class="mb-5 mt-4">
+  <mat-card class="example-card">
+    <div class="row">
+      <div class="d-flex justify-content-between align-items-center column">
+        <div class="address col-9">
+          <h4>{{"timeWork.determine" | translate}}</h4>
+          <p>{{"timeWork.configure" | translate}}</p>
+        </div>
+        <div class="spans col-3">
+          <span>{{"timeWork.advancedSettings" | translate}}</span>
+          <span class="span-two">{{"timeWork.traditionalSettings" | translate}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 day_row" *ngFor="let day of weekDays; let index = index">
+      <div class="father d-flex align-items-start my-4">
+        <div class="col-2">
+          <div class="margin">
+            <mat-slide-toggle (click)="toggleCon(day)" color="primary" class="d-inline-block"></mat-slide-toggle>
+            <span class="day mx-2">
+              {{'timeWork.'+day | translate}}
+            </span>
+          </div>
+        </div>
+
+        <div class="col-8 time_parent_rows" *ngIf="weekDaysToggle[day]">
+          <div class="form-cm position-relative time_row">
+            <div class="div-start-end position-relative w-50">
+              <label class="start-time">{{"timeWork.startTime" | translate}}</label>
+              <input type="time" class="form-control" name="startDate[{{day}}][]" value="" />
+            </div>
+            <span class="slash ms-2 me-4">--</span>
+            <div class="div-start-end position-relative w-50">
+              <label class="end-time">{{"timeWork.endTime" | translate}}</label>
+              <input type="time" class="form-control" name="endDate[{{day}}][]" value="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2" *ngIf="weekDaysToggle[day]">
+          <div class="div-copy-plus d-flex justify-content-around align-items-center mt-3">
+            <button class="plus" (click)="duplicatedTimeRow($event.target, false, $event)">+</button>
+            <button class="icon-copy" (click)="duplicatedTimeRow($event.target, true, $event)">
+              <i class="far fa-copy"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </mat-card>
+</div>
+
+
+
+
+
+
+

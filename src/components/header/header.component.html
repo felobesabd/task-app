@@ -1,0 +1,20 @@
+<header id="nav-wrapper">
+  <nav class="nav">
+    <div class="nav nav-start">
+      <div class="icon">
+        <mat-icon class="material-symbols-outlined icon-arrow">arrow_back</mat-icon>
+      </div>
+      <h3 class="mt-2">{{'header.addNewResource' | translate}}</h3>
+    </div>
+    <div class="nav nav-end">
+      <mat-slide-toggle (click)="toggleCon()" color="primary">{{lang === 'en' ? 'عربى' : 'english'}}</mat-slide-toggle>
+      <button class="mx-3 btn-cha" (click)="saveData($event)">
+        <h6 style="font-size: 13px; margin-top: 10px">{{'header.saveChanges' | translate}}</h6>
+      </button>
+      <button class="btn-res">
+        <mat-icon class="material-symbols-outlined">delete</mat-icon>
+        <h6 style="font-size: 13px; margin-top: 10px">{{'header.deleteResource' | translate}}</h6>
+      </button>
+    </div>
+  </nav>
+</header>

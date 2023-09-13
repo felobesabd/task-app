@@ -1,0 +1,164 @@
+.example-card {
+  min-height: 302px;
+  padding: 18px 30px;
+}
+
+.address h4 {
+  font-size: 14px !important;
+}
+
+.address p {
+  font-size: 13px !important;
+}
+
+.spans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59px;
+  border-radius: 10px;
+  border: 1.5px solid #F5F5F5;
+  background: #FBFBFB;
+}
+
+.spans span {
+  font-size: 14px;
+}
+
+.span-two {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  background: #0771DE;
+  box-shadow: 0 8px 40px 0 rgba(112, 144, 176, 0.08);
+}
+
+.form-cm {
+  //width: 85% !important;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.margin-left1 {
+  margin-left: 55px !important;
+}
+.margin-left {
+  margin-left: 25px !important;
+}
+.margin-left2 {
+  margin-left: 40px !important;
+}
+
+.start-time {
+  width: 100%;
+}
+
+.end-time {
+  width: 100%;
+}
+
+.form-control {
+  height: 50px;
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  background-color: #F1F3F4;
+  color: rgba(198, 197, 197, 0.93);
+  text-align: center;
+  line-height: 1.8;
+  border-radius: 20px;
+  margin-right: 60px;
+  border: none;
+}
+
+.icon-copy {
+  width: 40px;
+  height: 40px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 2.4;
+  color: rgba(198, 197, 197, 0.93);
+  border: none;
+}
+.div-start-end {
+  width: 45% !important;
+}
+.slash {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .day {
+    font-size: 11px;
+    margin-left: 0 !important;
+  }
+  .margin {
+    margin-right: 10px;
+  }
+  .control {
+    width: 130px;
+    height: 28px;
+    padding: 0 7px;
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  .start-time {
+    left: 4px;
+    top: -20px;
+    font-size: 12px;
+  }
+  .end-time {
+    left: 4px;
+    top: -20px;
+    font-size: 12px;
+  }
+  .form-cm {
+    height: 40px;
+    flex-direction: column;
+  }
+  .father {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  .slash {
+    display: none;
+  }
+  .div-start-end {
+    margin-bottom: 14px;
+  }
+  .div-copy-plus {
+    margin-left: 15px;
+  }
+  .plus {
+    margin-right: 20px;
+  }
+  .spans {
+    justify-content: center !important;
+    width: 100%;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .address {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
