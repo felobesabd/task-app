@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #dfe1e3;
+}
+
+.rtl{
+  @import 'node_modules/bootstrap/dist/css/bootstrap-grid.rtl.min.css';
+}

@@ -1,5 +1,44 @@
 {
-  "general": {
-    "AddNewResource": "اضافة مورد جديد"
+  "header": {
+    "addNewResource": "اضافة مورد جديد",
+    "saveChanges": "حفظ المتغيرات",
+    "deleteResource": "مسح المورد"
+  },
+  "info": {
+    "resourceName": "اسم الموارد"
+  },
+  "select": {
+    "choose": "اختر نوع الموارد",
+    "BookDuringTheDay": "حجز خلال اليوم",
+    "BookingDuration": "حجز مدة ( أكثر من يوم )"
+  },
+  "deadline": {
+    "TheResource": "المورد متاح إلى",
+    "choose": "اختر",
+    "day": "يوم",
+    "month": "شهر",
+    "year": "سنة",
+    "resourceTime": "وقت المورد",
+    "serviceTime": "وقت الخدمة",
+    "fixedTime": "الوقت ثابت",
+    "minutes": "دقائق",
+    "multipleReserving": "الحجز المتعدد",
+    "onlyOne": "حجز واحد فقط",
+    "moreThanOne": "حجز اكثر من شخص لنفس الموعد"
+  },
+  "timeWork": {
+    "determine": "حدد مواعيد العمل للمورد",
+    "configure" :"تكوين إعدادات الأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير وإضافة / إزالة أوقات الراحة لإعداد ساعات العمل.",
+    "advancedSettings": "إعدادات متقدمة",
+    "traditionalSettings": "إعدادات تقليدية",
+    "startTime": "وقت البدء",
+    "endTime": "وقت الانتهاء",
+    "saturday": "السبت",
+    "sunday": "الاحد",
+    "monday": "الإثنين",
+    "tuesday": "الثلاثاء",
+    "wednesday": "الأربعاء",
+    "thursday": "الخميس",
+    "friday": "الجمعة"
   }
 }
